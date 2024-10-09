@@ -1,0 +1,30 @@
+
+<div class="conteiner">
+    <div class="menu-lateral">
+        <div> 
+    <p (click)="alteraTeste('Dashboard')"> Dashboard</p>
+    <p> FUNCIONALIDADES</p>
+    <p (click)="alteraTeste('Seguro-Novo')"> Seguro Novo</p>
+    <p (click)="alteraTeste('Endosso-Inclusão')"> Endosso Inclusão</p>
+    <p (click)="alteraTeste('Endosso-Exclusão')"> Endosso Exclusão</p>
+    <p (click)="alteraTeste('Endosso-Cancelamento')"> Endosso Cancelamento</p>
+    <p> TELAS</p>
+    <p (click)="alteraTeste('Pesquisa')"> Pesquisa</p>
+    <p (click)="alteraTeste('Cotação')"> Cotação</p>
+    <p (click)="alteraTeste('Calculo')"> Calculo</p>
+    <p (click)="alteraTeste('Proposta')"> Proposta</p>
+    <p (click)="alteraTeste('Importação')"> Importação</p>
+    </div>
+    <app-dashboard *ngIf="nomeTeste == 'Dashboard'"> </app-dashboard>
+    <app-seguro-novo *ngIf="nomeTeste == 'Seguro-Novo'"> </app-seguro-novo>
+    <app-endosso-inclusao *ngIf="nomeTeste == 'Endosso-Inclusão'"> </app-endosso-inclusao>
+    <app-endosso-exclusao *ngIf="nomeTeste == 'Endosso-Exclusão'"> </app-endosso-exclusao>
+    <app-endosso-cancelamento *ngIf="nomeTeste == 'Endosso-Cancelamento'"> </app-endosso-cancelamento>
+
+    <app-pesquisa *ngIf="nomeTeste == 'Pesquisa'"> </app-pesquisa>
+    <app-cotacao *ngIf="nomeTeste == 'Cotação'"> </app-cotacao>
+    <app-calculo *ngIf="nomeTeste == 'Calculo'"> </app-calculo>
+    <app-proposta *ngIf="nomeTeste == 'Proposta'"> </app-proposta>
+    <app-importacao *ngIf="nomeTeste == 'Importação'"> </app-importacao>
+</div>   
+</div>
